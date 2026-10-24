@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planes de Pliometría</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .plan-card {
+            height: 100%;
+            transition: transform 0.25s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-content {
+            margin-top: 30px;
+        }
+
+        .exercise-video {
+            width: 100%;
+            max-height: 70vh;
+            background: #000;
+            border-radius: 8px;
+        }
+
+        .table th,
+        .table td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="../index.html">LPO Entrenamiento</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link active" href="../index.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="servicios.html">Servicios</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="galeria.html">galeria</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contacto.html">Contacto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+
+        <h1 class="text-center mb-3">Planes de Pliometría</h1>
+
+        <p class="text-center text-muted mb-5">
+            Elige el plan que mejor se adapte a tu nivel.
+        </p>
+
+        <!-- TARJETAS DE LOS PLANES -->
+        <div class="row g-4">
+
+            <!-- PLAN BÁSICO -->
+            <div class="col-md-4">
+                <div class="card plan-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3>Plan Básico</h3>
+
+                        <p>
+                            Para principiantes que quieren mejorar
+                            su salto, coordinación y explosividad.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#planBasico">
+                            Ver plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAN INTERMEDIO -->
+            <div class="col-md-4">
+                <div class="card plan-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3>Plan Intermedio</h3>
+
+                        <p>
+                            Desarrolla potencia, coordinación y
+                            capacidad de salto con mayor dificultad.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-warning"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#planIntermedio">
+                            Ver plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAN AVANZADO -->
+            <div class="col-md-4">
+                <div class="card plan-card shadow-sm">
+                    <div class="card-body text-center">
+                        <h3>Plan Avanzado</h3>
+
+                        <p>
+                            Ejercicios exigentes para trabajar la
+                            potencia explosiva y la reactividad.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#planAvanzado">
+                            Ver plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ============================== -->
+        <!-- PLAN BÁSICO -->
+        <!-- ============================== -->
+        <section class="collapse plan-content" id="planBasico">
+            <div class="card shadow-sm">
+                <div class="card-body">
+
+                    <h2 class="mb-3">🏃 Plan Básico</h2>
+
+                    <p><strong>Duración:</strong> 4 semanas</p>
+                    <p><strong>Frecuencia:</strong> 3 días por semana</p>
+
+                    <h4 class="mt-4">Semana 1 — Adaptación</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Ejercicio</th>
+                                    <th>Series</th>
+                                    <th>Repeticiones</th>
+                                    <th>Descanso</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Squat Jump</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                    <td>60 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"
+                                            type="button"
+                                            data-video="../videos/video1.mp4"
+                                            data-titulo="Squat Jump"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Salto vertical</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>60 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"
+                                            type="button"
+                                            data-video="../videos/video2.mp4"
+                                            data-titulo="Salto vertical"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Saltos laterales</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>45 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"
+                                            type="button"
+                                            data-video="../videos/video3.mp4"
+                                            data-titulo="Saltos laterales"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4 class="mt-4">Semana 2</h4>
+                    <p>
+                        Aumenta progresivamente la dificultad solo
+                        cuando domines la técnica de los ejercicios.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- PLAN INTERMEDIO -->
+        <!-- ============================== -->
+        <section class="collapse plan-content" id="planIntermedio">
+            <div class="card shadow-sm">
+                <div class="card-body">
+
+                    <h2 class="mb-3">⚡ Plan Intermedio</h2>
+
+                    <p><strong>Duración:</strong> 6 semanas</p>
+                    <p><strong>Frecuencia:</strong> 3 días por semana</p>
+
+                    <h4 class="mt-4">Semana 1 — Potencia</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-warning">
+                                <tr>
+                                    <th>Ejercicio</th>
+                                    <th>Series</th>
+                                    <th>Repeticiones</th>
+                                    <th>Descanso</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Box Jump</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                    <td>90 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning"
+                                            type="button"
+                                            data-video="../videos/video4.mp4"
+                                            data-titulo="Box Jump"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Broad Jump</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>90 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning"
+                                            type="button"
+                                            data-video="video5.mp4"
+                                            data-titulo="Broad Jump"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Depth Jump</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>120 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-warning"
+                                            type="button"
+                                            data-video="../videos/video6.mp4"
+                                            data-titulo="Depth Jump"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== -->
+        <!-- PLAN AVANZADO -->
+        <!-- ============================== -->
+        <section class="collapse plan-content" id="planAvanzado">
+            <div class="card shadow-sm">
+                <div class="card-body">
+
+                    <h2 class="mb-3">🔥 Plan Avanzado</h2>
+
+                    <p><strong>Duración:</strong> 8 semanas</p>
+                    <p><strong>Frecuencia:</strong> 3 días por semana</p>
+
+                    <h4 class="mt-4">Semana 1 — Explosividad</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="table-danger">
+                                <tr>
+                                    <th>Ejercicio</th>
+                                    <th>Series</th>
+                                    <th>Repeticiones</th>
+                                    <th>Descanso</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Depth Jump</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>120 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-danger"
+                                            type="button"
+                                            data-video="../videos/video7.mp4"
+                                            data-titulo="Depth Jump avanzado"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Box Jump máximo</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>120 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-danger"
+                                            type="button"
+                                            data-video="../videos/video8.mp4"
+                                            data-titulo="Box Jump máximo"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Salto reactivo</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>120 segundos</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-danger"
+                                            type="button"
+                                            data-video="../videos/video9.mp4"
+                                            data-titulo="Salto reactivo"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#videoModal">
+                                            ▶ Ver
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================== -->
+    <!-- MODAL DEL REPRODUCTOR -->
+    <!-- ============================== -->
+    <div class="modal fade" id="videoModal" tabindex="-1"
+        aria-labelledby="videoModalTitulo" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitulo">
+                        Video del ejercicio
+                    </h5>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <video
+                        id="reproductorVideo"
+                        class="exercise-video"
+                        controls
+                        playsinline
+                        preload="metadata">
+                        Tu navegador no admite la reproducción de este video.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <!-- JAVASCRIPT DE LOS VIDEOS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modalElemento = document.getElementById("videoModal");
+            const reproductor = document.getElementById("reproductorVideo");
+            const titulo = document.getElementById("videoModalTitulo");
+
+            const modal = bootstrap.Modal.getOrCreateInstance(modalElemento);
+
+            document.querySelectorAll("[data-video]").forEach(function (boton) {
+                boton.addEventListener("click", function () {
+                    const archivo = boton.getAttribute("data-video");
+                    const nombre = boton.getAttribute("data-titulo");
+
+                    // La página está en /pages y los videos en /videos
+                    const rutaVideo = "../videos/" + archivo;
+
+                    reproductor.pause();
+                    reproductor.src = rutaVideo;
+                    reproductor.load();
+
+                    titulo.textContent = nombre;
+
+                    modal.show();
+
+                    console.log("Cargando video:", rutaVideo);
+                });
+            });
+
+            reproductor.addEventListener("error", function () {
+                const error = reproductor.error;
+
+                console.error("No se pudo cargar el video:", {
+                    ruta: reproductor.currentSrc,
+                    codigo: error ? error.code : "desconocido"
+                });
+            });
+
+            modalElemento.addEventListener("hidden.bs.modal", function () {
+                reproductor.pause();
+                reproductor.removeAttribute("src");
+                reproductor.load();
+
+                titulo.textContent = "Video del ejercicio";
+            });
+        });
+    </script>
+
+</body>
+</html>
